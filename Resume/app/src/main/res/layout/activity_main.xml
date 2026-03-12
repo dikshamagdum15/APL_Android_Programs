@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary">
+
+    <!-- LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ================= HEADER CARD (RelativeLayout) ================= -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:text="Diksha Magdum"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Android Developer"
+                android:textColor="@android:color/white"
+                android:layout_below="@id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:layout_alignParentEnd="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+        </RelativeLayout>
+
+        <!-- ================= CONTACT CARD (AbsoluteLayout) ================= -->
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/white"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_x="10dp"
+                android:layout_y="10dp"
+                android:text="📧 diksha@gmail.com"
+                android:textColor="@color/textDark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_x="10dp"
+                android:layout_y="45dp"
+                android:text="📱 9876543210"
+                android:textColor="@color/textDark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_x="10dp"
+                android:layout_y="80dp"
+                android:text="📍 Maharashtra, India"
+                android:textColor="@color/textDark" />
+        </AbsoluteLayout>
+
+        <!-- ================= EDUCATION CARD (TableLayout) ================= -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:stretchColumns="1">
+
+            <TextView
+                android:text="🎓 Education"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/primary"/>
+
+            <TableRow android:orientation="vertical">
+
+                <TextView android:text="Degree" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="B.Tech" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="77dp"
+                    android:text="University" />
+
+                <TextView android:text="D.Y.Patil college of engineering and technology" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Year"/>
+                <TextView android:text="2026"/>
+            </TableRow>
+        </TableLayout>
+
+        <!-- ================= SKILLS CARD (GridLayout) ================= -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:columnCount="2">
+
+            <TextView
+                android:text="💡 Skills"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/primary"
+                android:layout_columnSpan="2"/>
+
+            <TextView android:text="• Java"/>
+            <TextView android:text="• Kotlin"/>
+            <TextView android:text="• Android"/>
+            <TextView android:text="• SQLite"/>
+        </GridLayout>
+
+        <!-- ================= PROJECTS SECTION ================= -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/white"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="8dp"
+                    android:text="📂 Projects"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/projectList"
+                    android:layout_width="match_parent"
+                    android:layout_height="414dp"
+                    android:dividerHeight="1dp" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</ScrollView>
