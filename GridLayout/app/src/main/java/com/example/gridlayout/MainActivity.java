@@ -7,8 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnBgImage, btnBgColor, btnSpinner,
-            btnProgress;
+    Button btnBgImage, btnBgColor, btnSpinner, btnProgress, btnFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         btnBgColor = findViewById(R.id.btnBgColor);
         btnSpinner = findViewById(R.id.btnSpinner);
         btnProgress = findViewById(R.id.btnProgress);
+        btnFragment = findViewById(R.id.btnFragment);
 
         btnBgImage.setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, ChangeBgMainActivity.class)));
@@ -31,5 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
         btnProgress.setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, ProgressBarActivity.class)));
-}
+
+        if (btnFragment != null) {
+            btnFragment.setOnClickListener(v ->
+                    startActivity(new Intent(MainActivity.this, FragmentActivity.class)));
+        }
+    }
 }

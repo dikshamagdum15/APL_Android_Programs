@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cardview_dark_background">#E297EF</color>
+    <color name="material_500">#E297EFFF</color>
+</resources>

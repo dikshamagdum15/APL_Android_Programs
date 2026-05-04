@@ -16,6 +16,13 @@
         android:text="Change BG Color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnFragment"
+        android:text="Fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <Button
         android:id="@+id/btnSpinner"
         android:text="Spinner"
@@ -27,7 +34,5 @@
         android:text="Progress Bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
-
 
 </GridLayout>
